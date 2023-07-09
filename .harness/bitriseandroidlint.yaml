@@ -33,10 +33,9 @@ pipeline:
                   spec:
                     uses: github.com/bitrise-steplib/bitrise-step-android-build.git
                     with:
-                      variant: debug
-                      build_type: apk
-                      project_location: ./
-                      app_type: aab
-                      gradlew_path: ./gradlew
-                      path: ./_tmp
-                      arguments: "--info"
+                      cache_level: all
+                    env:
+                      MODULE: app
+                      PROJECT_LOCATION: .
+                      VARIANT: debug
+                      GRADLEW_PATH: ./gradlew

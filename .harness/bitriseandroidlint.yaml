@@ -32,3 +32,5 @@ pipeline:
                   identifier: Android_Lint
                   spec:
                     uses: https://github.com/bitrise-steplib/bitrise-step-android-lint.git
+                    with:
+                      ProjectLocation: BUILD.bazel

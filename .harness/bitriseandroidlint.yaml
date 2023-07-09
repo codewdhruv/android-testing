@@ -8,7 +8,7 @@ pipeline:
     ci:
       codebase:
         connectorRef: gitconnectordhruba
-        repoName: android-testing
+        repoName: android-sample
         build: <+input>
   stages:
     - stage:

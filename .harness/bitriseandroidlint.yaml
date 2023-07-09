@@ -33,5 +33,5 @@ pipeline:
                   spec:
                     uses: github.com/bitrise-steplib/bitrise-step-android-build.git
                     with:
-                      variant: "'debug'"
-                      build_type: "'apk'"
+                      variant: debug
+                      build_type: apk

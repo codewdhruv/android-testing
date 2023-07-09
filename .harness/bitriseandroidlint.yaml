@@ -31,6 +31,7 @@ pipeline:
                   name: Android Lint
                   identifier: Android_Lint
                   spec:
-                    uses: https://github.com/bitrise-steplib/bitrise-step-android-lint.git
+                    uses: github.com/bitrise-steplib/bitrise-step-android-build.git
                     with:
-                      ProjectLocation: BUILD.bazel
+                      variant: "'debug'"
+                      build_type: "'apk'"

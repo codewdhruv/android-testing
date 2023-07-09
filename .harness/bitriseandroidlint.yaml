@@ -35,3 +35,8 @@ pipeline:
                     with:
                       variant: debug
                       build_type: apk
+                      project_location: ./_tmp
+                      app_type: aab
+                      gradlew_path: ./gradlew
+                      path: ./_tmp
+                      arguments: "--info"
